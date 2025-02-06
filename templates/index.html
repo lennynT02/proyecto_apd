@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>PETZOO</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="row cb1">
+      <div class="col col-md-6">
+        <h6 style="margin: 0px">
+          <strong>ATENCIÓN DE LUNES A DOMINGO 10:00 AM A 7:00 PM</strong>
+        </h6>
+      </div>
+      <div class="col col-md-6">
+        <ul>
+          <a href="#" class="linea" style="font-weight: bold"><strong>PETZOO</strong></a>
+          <a href="spa.html" class="linea">Spa</a>
+          <a href="#" class="linea">Tienda</a>
+          <a href="#">Contacto</a>
+          <a href="" class="red"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="red"><i class="fab fa-instagram" style="font-weight: bold"></i></a>
+          <a href="" class="red"><i class="fas fa-phone" style="transform: rotate(90deg)"></i></a>
+        </ul>
+      </div>
+    </div>
+    <div class="row cb2">
+      <div class="col col-md-4 d-flex align-items-center justify-content-center">
+        <a href="" style="display: flex; align-items: center">
+          <i class="fas fa-bars" style="font-size: 25px; margin-right: 5px"></i>
+          <span>Menu</span>
+        </a>
+      </div>
+      <div class="col col-md-4">
+        <a href="">
+          <i class="fas fa-dog" style="font-size: 59px"></i>
+          <h1 style="display: inline-block"><strong>PETZOO</strong></h1>
+        </a>
+      </div>
+      <div class="col col-md-4">
+        <a href=""><i class="fas fa-user linea2" style="font-size: 20px"></i></a>
+        <a href=""><i class="fas fa-search linea2" style="font-size: 20px; padding-left: 9px"></i></a>
+        <a href=""><i class="fas fa-shopping-basket" style="font-size: 20px; padding-left: 9px"></i></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="row cuerpo_1">
+      <div class="col col-md-7">
+        <img src="{{ url_for('static', filename='img/pet.png') }}" alt="perro en peluqueria" />
+      </div>
+      <div class="col col-md-3">
+        <i class="fas fa-cut" style="rotate: -30deg; font-size: 50px"></i>
+        <br />
+        <h3>PetZoo Spa</h3>
+        <br /><br />
+        <p>
+          <strong>¿Deseas que tu mascota deslumbre con su apariencia?</strong>
+          Reserva una cita y nuestros expertos se encargarán de realzar la
+          belleza natural de tu querido compañero.
+        </p>
+        <span>
+          <a href="/form" class="btn btn-success">Reservar</a>
+          <a href="spa" class="btn btn-light">Informacion</a>
+        </span>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row cuerpo_2">
+      <figure class="juguete">
+        <img src="{{ url_for('static', filename='img/juguete.png') }}" alt="perro" />
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <h5>PetZoo Spa</h5>
+            <h2><strong> Visita nuestro local</strong></h2>
+            <p>
+              Le brindamos el mejor servido a su mascota, en un lugar
+              agradeable y acogedor donde nuetros peludos se sientan comodos
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <a href="local.html" class="btn btn-primary">Como llegar</a>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </figure>
+    </div>
+    <div class="row cuerpo_3">
+      <figure class="pet">
+        <img src="{{ url_for('static', filename='img/pet1.png') }}" alt="perro" />
+        <div class="spa">
+          <h1><strong>Conoce todos nuestros servicios</strong></h1>
+        </div>
+      </figure>
+    </div>
+    <div class="row cuerpo_4">
+      <div class="col-md-4">
+        <figure class="servicios ducha">
+          <img src="{{ url_for('static', filename='img/pet2.png') }}" alt="Perro en la bañera" />
+          <div class="spa">
+            <br><br><br><br><br><br>
+            <h1><strong>SPA Y CORTE</strong></h1>
+            <p>
+              Es muy importante el cuidado y salud de tu mascota. Encuentra en
+              <strong>PETZOO</strong>, el mejor servicio de estética y aseo para
+              tu mimado.
+            </p><br><br>
+            <a href="spa.html" class="btn btn-info">Conocer mas</a>
+
+          </div>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="servicios comida">
+          <img src="{{ url_for('static', filename='img/comida.png') }}" alt="Comida de perros" />
+          <div class="spa">
+            <br><br><br><br><br><br>
+            <h1><strong>ALIMENTOS</strong></h1>
+            <p>
+              Encuentra en <strong>PETZOO</strong> los mejores alimentos para tu
+              mascota, con la mejor calidad y precio.
+            </p><br><br>
+            <a href="" class="btn btn-info">Conocer mas</a>
+          </div>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="servicios accesorio">
+          <img src="{{ url_for('static', filename='img/accesorios.png') }} alt=" Juguetes de perros" />
+          <div class="spa">
+            <br><br><br><br><br><br>
+            <h1><strong>Accesorios</strong></h1>
+            <p>
+              En <strong>PETZOO</strong> encontrarás los mejores accesorios para
+              tu mascota, con la mejor calidad y precio.
+            </p><br><br>
+            <a href="" class="btn btn-info">Conocer mas</a>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>CONTACTO</h5>
+        <p>
+          <a href=""><i class="fas fa-map-marker-alt"></i></a>
+          <a href=""><i class="fas fa-phone"></i></a>
+          <a href=""><i class="fas fa-envelope"></i></a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h5><strong>REDES SOCIALES</strong></h5>
+        <p>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </p>
+      </div>
+    </div>
+    <p>&copy; 2024 PetZoo</p>
+  </footer>
+</body>
+
+</html>
